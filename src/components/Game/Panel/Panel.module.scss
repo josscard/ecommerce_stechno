@@ -1,0 +1,126 @@
+@import "~/src/scss/index.scss";
+
+.panel{
+    position: relative;
+    display: flex !important;
+    margin-top: -150px;
+}
+// modificamos el cuadro de la imagen del producto a comprar
+.imgContainer {
+    width: 70%;
+    padding-right: 12px;
+
+    > img {
+        border-radius: 15px;
+    }
+}
+
+.actionsContainer {
+    width: 50%;
+    padding-left: 12px;
+    height: 100%;
+
+    > div {
+        // gradiente para el cuadro de precios del producto
+        background: rgb(39,205,244);
+        background: linear-gradient(0deg, rgba(39,205,244,0) 61%, rgba(6,122,251,1) 93%);
+       // background-color: $background-quaternary__blur;
+        backdrop-filter: blur(15px);
+        box-shadow: 4px 4px 8px 4px ;
+        border-radius: 15px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        > h2 {
+            margin-bottom: 10px;
+            
+        }
+
+    }
+}
+
+.moreInfo {
+    background-color: $background-quaternary__blur ;
+    backdrop-filter: blur(15px);
+    display: flex;
+    padding: 6px 15px;
+    border-radius: 50px;
+    margin-bottom: 40px;
+
+    >span {
+        display: flex;
+        align-items: center;
+        border-right: 1px solid $border-primary;
+        padding-right: 10px;
+        margin-right: 10px;
+        font-size: 12px;
+
+        &:first-of-type {
+            >img {
+                filter: brightness(0) invert(1);
+                height: 18px;
+                margin-right: 10px;
+            }
+        }
+
+        //este es para quitarle las rayas
+        &:last-of-type {
+            border-right: 0;
+            padding-right: 0;
+            margin-right: 0;
+
+//esta i es el icono de flechita
+            i {
+                display: flex;
+                align-items: center;
+                color: $success;
+                margin-right: 5px;
+                font-size: 14px;
+
+            }
+
+        }
+    }
+}
+
+.price {
+    margin-bottom: 40px;
+
+    .originalPrice {
+        font-size: 18px;
+        text-decoration: line-through;
+
+        >i {
+            font-size: 12px;
+        }
+    }
+
+    .discount {
+        margin: 0 10px;
+        color: $primary;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .price{
+        font-size: 35px;
+    }
+
+    
+    
+}
+
+.heart{
+    margin: 0 !important;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px !important;
+
+}
+
+.agotado{
+        font-size: 20px;
+    }

@@ -1,0 +1,39 @@
+.topBar {
+  position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    z-index:5;
+    
+}
+
+.left {
+    width: 20%;
+    
+    img {
+        height: 50px;
+        transition: all 0.5s;
+        border-radius: 15px;
+        box-shadow: 2px 2px 8px 2px;
+
+        &:hover {
+            transform: translateX(-14px)
+        }
+    }
+}
+
+//Ubica en la pantalla principal los elementos del centre
+.center{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+// ubica los elementos a la derecha
+.right{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+
+}

@@ -1,0 +1,60 @@
+@import"~/src/scss/index.scss";
+
+.account{
+    display: flex;
+    
+
+    button{
+        background-color: transparent !important;
+        margin: 10px !important;
+
+        &:hover {
+            > i {
+                color: $primary
+            }
+        }
+       
+// icono user
+        
+        
+    } i{
+            font-size: 20px;
+            height: 20px !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            
+
+        }
+// carrito de compras
+    .cart{
+        display: flex;
+        align-items: center ;
+        justify-content: center;
+    
+
+    >div {
+        background-color: $primary;
+        color: $text-primary;
+        font-size: 10px;
+        margin-left: 3px;
+    }
+    }
+
+    // cuadrito donde esta el icono del user
+    .user{
+        background-color: $background-quaternary__blur !important;
+        border-radius: 10px;
+        border: 2px solid $background-quaternary__blur;
+        
+
+        &:hover {
+            border: 2px solid $primary;
+
+            i {
+                color: $text-primary;
+            }
+        }
+    }
+}

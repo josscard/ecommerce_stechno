@@ -1,0 +1,69 @@
+@import "/src/scss/index.scss";
+
+.container {
+    height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+
+}
+
+.topBar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+
+//modifica el tamaño de la imagen del logo del nombre
+    > a{
+        > img{
+            height: 40px;
+            width: 250px;
+            height: 65px;
+        transition: all 0.5s;
+
+        &:hover {
+            transform: translateX(-14px)
+        }
+        }
+/*&__left{
+    display: flex !important;
+    align-items: center;
+
+    img{
+        height: 65px;
+        transition: all 0.5s;
+
+        &:hover {
+            transform: translateX(-14px)
+        }
+    }
+}
+*/
+
+        > i{
+            font-size: 26px;
+            color: $text-primary;
+            margin: 0;
+        }
+    }
+}
+
+.blockLeft{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blockRight{
+    background-image: url("/images/sign-stechno.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 50%;
+}

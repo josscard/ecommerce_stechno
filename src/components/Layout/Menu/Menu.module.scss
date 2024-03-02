@@ -1,0 +1,104 @@
+@import "~/src/scss/index.scss";
+
+/*con este podemos modificar donde estan todos los logos*/
+.platforms{
+    position: relative;
+    background-color: $background-quaternary__blur;
+    backdrop-filter: blur(30px);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0 50px 0 20px;
+    border-radius: 100px 100px 100px 100px;
+    
+
+    >a {
+        display: flex;
+        align-items: center;
+        padding: 20px 15px;
+        text-decoration: none;
+
+       // tamaño de loguitos de las categorias e invertir color.
+        img{
+          filter: brightness(0) invert(1);
+            height: 18px;
+            padding-right: 10px
+        }
+    }
+}
+/* todo sobre el buscador, ubicacion, colores y demas*/
+.search{
+    position: absolute;
+    top: 5px;
+    right: -70px;
+    background-color: $primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    height: 50px;
+    width: 60px;
+    border: 0;
+
+    &:hover {
+        background-color: $primary-hover;
+        cursor: pointer;
+    }
+
+    >i {
+        margin: 0;
+        font-size: 20px;
+    }
+
+}
+/*buscador desplegado para escribir*/
+.inputContainer {
+ position: absolute;
+    left: 810px;
+    top: 5px;
+    height: 50px;
+    
+    background-color: $primary;
+    border-radius: 100px;
+    display: none;
+
+    &.active {
+        display: flex;
+      width: calc(30% + 30px);
+     
+     
+    }
+
+    .input {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 100px;
+
+        > input{
+            background-color: $primary-search !important;
+            border: 0 !important ;
+            color: $text-primary-search !important;
+            font-size: 16px;
+            padding: 10px 30px;
+
+            &::placeholder {
+                color: $text-primary;
+                //opacity: 0.8;
+            }
+
+        }
+
+    }
+
+    .closeInput {
+        position: absolute;
+        top: 0;
+        right: -40px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
